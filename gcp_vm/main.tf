@@ -16,7 +16,7 @@ resource "google_compute_instance" "nginx-vm" {
   }
 
   network_interface {
-    network = "default"
+    network = google_compute_network.project_vpc.self_link
 
     access_config {
       // Ephemeral public IP
