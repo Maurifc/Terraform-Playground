@@ -23,7 +23,7 @@ resource "google_compute_instance" "nginx-vm" {
     }
   }
 
-  metadata_startup_script = "apt update && apt install nginx"
+  metadata_startup_script = "apt-get update && apt-get -y install nginx"
 
   service_account {
     email  = google_service_account.default.email
