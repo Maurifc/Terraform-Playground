@@ -1,8 +1,9 @@
-# Terraform Getting Started
+### Terraform Getting Started
 
-## Requirements
-- GCP Project Created
-- Service Account with Editor role
+#### Requirements
+- A GCP Project
+- Service Account with "Editor" role
 
-## Enable those GCP APIs
+#### Enable GCP APIs
+```
 gcloud services enable compute.googleapis.com
