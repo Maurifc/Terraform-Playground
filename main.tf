@@ -8,11 +8,11 @@ terraform {
 }
 
 provider "google" {
-  credentials = file("gcp-key.json")
+  credentials = file(var.credentials_file)
 
   project = "thurproj"
-  region  = "us-east1"
-  zone    = "us-east1-d"
+  region  = var.region
+  zone    = var.zone
 }
 
 # VPC
@@ -34,7 +34,7 @@ resource "google_compute_instance" "vm_instance" {
 
   network_interface {
     network = google_compute_network.vpc_network.name # VPC Binding
-    access_config { # Creates an external IP address
+    access_config {                                   # Creates an external IP address
     }
   }
 }
