@@ -7,5 +7,6 @@ Projects to practice Terraform
 gcloud services enable \
     compute.googleapis.com \
     iam.googleapis.com \
-    sqladmin.googleapis.com
+    sqladmin.googleapis.com \
+    cloudbuild.googleapis.com
 ```
