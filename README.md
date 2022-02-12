@@ -9,5 +9,6 @@ gcloud services enable \
     iam.googleapis.com \
     sqladmin.googleapis.com \
     container.googleapis.com \
+    dns.googleapis.com \
     cloudbuild.googleapis.com
 ```
