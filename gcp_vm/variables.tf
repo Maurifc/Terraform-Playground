@@ -1,6 +1,5 @@
-variable "project_id" {
-}
-variable "credentials_file" {
+variable "vm-service-account" {
+  default = "vm-service-account"
 }
 
 variable "region" {
@@ -9,4 +8,9 @@ variable "region" {
 
 variable "zone" {
   default = "us-east1-d"
+}
+
+variable "project_id" {
+}
+variable "credentials_file" {
 }
