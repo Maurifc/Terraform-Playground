@@ -4,8 +4,6 @@ variable "gke_num_nodes" {
   description = "number of gke nodes per zone"
 }
 
-
-
 # Provider
 variable "project_id" {
 }
