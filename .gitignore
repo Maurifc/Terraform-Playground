@@ -1,2 +1,2 @@
-# GCP Service Account Keys
-*gcp-key*.json
+*.json
+*.tfvars
